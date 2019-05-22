@@ -37,6 +37,14 @@ In your home directory, you will have `.ovpn` files. These are the client config
 
 If you have any question, head to the [FAQ](#faq) first.
 
+# HOW DO I START/STOP/RESTART OPENVPN SERVER ON UBUNTU 18.04 LTS?
+```
+$ sudo systemctl stop openvpn@server # <--- stop server
+$ sudo systemctl start openvpn@server # <--- start server
+$ sudo systemctl restart openvpn@server # <--- restart server
+$ sudo systemctl status openvpn@server # <--- get server status
+```
+
 ### Headless install
 
 It's also possible to run the script headless, e.g. without waiting for user input, in an automated manner.
